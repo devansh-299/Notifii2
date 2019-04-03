@@ -33,13 +33,15 @@ public class screen2 extends AppCompatActivity implements DatePickerDialog.OnDat
     Button b1 ;
     int day=0;  int  month=0;  int year=0; int hour=0 ; int minute = 0;
     int dayfinal=0 ;int monthfinal=0 ;int yearfinal= 0; int hourfinal=0;int minutefinal= 0;
-   // static String timeString;
+    static String timeString;
     EditText description;
     static String descriptionString;
     static int i = 0;
     String toParse ;
     Long intervalS;
     Context ctx = getApplicationContext();
+
+    database mydatabase;
 
     String filename = "Notifii_file";
     //String fileContents = "Hello world!";
@@ -69,6 +71,8 @@ public class screen2 extends AppCompatActivity implements DatePickerDialog.OnDat
                 description = (EditText)findViewById(R.id.description);
                 DatePickerDialog datePickerDialog = new DatePickerDialog(screen2.this,screen2.this , year,month,day);
                 datePickerDialog.show();
+
+                mydatabase = new database(ctx);
                 ///
 
 
@@ -135,8 +139,10 @@ public class screen2 extends AppCompatActivity implements DatePickerDialog.OnDat
         }
 
         intervalS = date.getTime();
-/*
         timeString = Long.toString(new Date().getTime());
+
+        /*
+
         HashMap<String,String> map = new HashMap<String, String>();
         descriptionString = description.getText().toString();
         map.put(Long.toString(intervalS),descriptionString);
@@ -161,6 +167,11 @@ public class screen2 extends AppCompatActivity implements DatePickerDialog.OnDat
 */
 
         //////////////////////////////////////////
+                        //SAVING IN DATABASE!!!
+
+        mydatabase.insertData(timeString,descriptionString);
+
+        //////////////////////////////////////
 
         Intent iy = new Intent();
         iy.setAction("piworks.notifii.reminder");

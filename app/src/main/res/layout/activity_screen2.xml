@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/background_light"
     tools:context=".screen2">
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginTop="169dp"
         android:text="Add a Reminder"
         android:textAlignment="textStart"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimary"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -30,7 +30,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="256dp"
         android:text="1 .Set Description"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -42,12 +42,12 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="1dp"
         android:layout_marginTop="327dp"
-        android:maxLength="100"
-        android:maxLines="4"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:textColor="@android:color/background_light"
+        android:maxLength="100"
+        android:maxLines="4"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginBottom="303dp"
         android:text="2. When to Remind"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -105,7 +105,7 @@
         android:layout_marginTop="68dp"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Notifii"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="63sp"
         android:textStyle="bold" />
 
@@ -130,7 +130,7 @@
         android:layout_marginBottom="4dp"
         android:layout_toEndOf="@+id/textView2"
         android:text="( max 100 characters)"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp" />
 
 </RelativeLayout>

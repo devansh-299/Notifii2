@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/background_light"
     tools:context=".settings">
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginTop="59dp"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Settings"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="95sp" />
 
     <TextView
@@ -41,9 +41,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="234dp"
         android:text="Vibrate on notifying"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorPrimary"
         android:textSize="27sp" />
-
 
 
 </RelativeLayout>
