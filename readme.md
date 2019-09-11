@@ -1,5 +1,5 @@
-# Notifii2
+## Notifii2
 
-- Shows Reminders at custom
-
-Made by Devansh Agarwal
+- Shows Reminders at custom time 
+- Notification part working
+- Uses epoch logic
